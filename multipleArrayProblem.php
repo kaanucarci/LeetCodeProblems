@@ -1,4 +1,14 @@
 <?php
+/**
+ * Given a 2D array, create a structure where each cell’s value is used as a key, and its adjacent elements (top, bottom, left, right) are stored as values.
+ * If the array is not multidimensional or an index is out of range, return an error message.
+ *
+ * Example Input: [[1,2,3], [4,5,6], [7,8,9]]
+ * Example Output: {"1":[2,4], "2":[1,3,5], "3":[2,6], "4":[5,1,7], "5":[4,6,2,8], "6":[5,3,9], "7":[8,4], "8":[7,9,5], "9":[8,6]}
+ *
+ * Time complexity: O(n×m)
+ * Space complexity: O(n×m)
+ */
 
 $multiple_array = [
     [1,2,3],
